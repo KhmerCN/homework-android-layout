@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EB02101F"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/batman"
+        android:layout_width="155dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="436dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batmen" />
+
+    <ImageView
+        android:id="@+id/superman"
+        android:layout_width="162dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batman"
+        app:srcCompat="@drawable/superman" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="224dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="Calibri"
+        android:text="Superman is a fictional character, a superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, Superman Is An Alien, But His Ancestors Were Human. The plot of Batman v Superman: Dawn of Justice revolves around the idea that Superman."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/superman"
+        app:layout_constraintTop_toBottomOf="@+id/batman" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="223dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="67dp"
+        android:fontFamily="Calibri"
+        android:text="Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27 in 1939. The fictional superhero Batman, who appears in American comic books published by DC Comics, has appeared in various films since his inception"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/batman"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="302dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="#BA1AE2"
+        android:text="Show all Character >>"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/superman" />
+
+</android.support.constraint.ConstraintLayout>
